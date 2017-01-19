@@ -1,0 +1,8 @@
+iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+CINST Boxstarter -y
+Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
+Update-ExecutionPolicy Unrestricted
+
+Set-TaskbarOptions -Size Large -Lock -Dock Bottom
+
+Install-WindowsUpdate -AcceptEula
