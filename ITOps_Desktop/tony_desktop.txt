@@ -26,6 +26,8 @@ cinst rdcman
 
 
 Install-WindowsUpdate -AcceptEula
+cinst Microsoft-Hyper-V-All -source windowsFeatures
+cinst IIS-WebServerRole -source windowsfeatures
 
 #remove edge from taskbar
 #pin chrome to taskbar
