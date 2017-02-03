@@ -10,9 +10,7 @@ Set-TaskbarOptions -Size Large -Lock -Dock Bottom
 cinst adobereader
 cinst GoogleChrome
 cinst 7zip.install
-cinst visualstudiocode
 cinst Firefox
-cinst teamviewer
 
 Install-WindowsUpdate -AcceptEula
 
