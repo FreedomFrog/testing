@@ -1,6 +1,6 @@
 iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 CINST Boxstarter -y
-Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
+Set-WindowsExplorerOptions -EnableShowFileExtensions
 Update-ExecutionPolicy Unrestricted
 
 
