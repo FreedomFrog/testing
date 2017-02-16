@@ -7,7 +7,6 @@ Update-ExecutionPolicy Unrestricted
 Set-TaskbarOptions -Size Large -Lock -Dock Bottom
 
 
-cinst sublimetext3 -y
 cinst notepadplusplus.install
 cinst git
 cinst adobereader
@@ -27,8 +26,6 @@ cinst rdcman
 
 
 Install-WindowsUpdate -AcceptEula
-cinst Microsoft-Hyper-V-All -source windowsFeatures
-cinst IIS-WebServerRole -source windowsfeatures
 
 #remove edge from taskbar
 #pin chrome to taskbar
@@ -40,8 +37,6 @@ Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Microsoft Office\O
 #remove unwanted apps from win10
 
 Install-ChocolateyFileAssociation ".txt" "$env:programfiles\Sublime Text 3\sublime_text.exe"
-
-#pin hyperV manager
 
 #pin remote desktop manager to taskbar
 Install-ChocolateyPinnedTaskBarItem "$(Boxstarter.programFilesx86)\Microsoft\Remote Desktop Connection Manager\RDCMan.exe"
