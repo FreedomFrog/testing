@@ -3,22 +3,24 @@ CINST Boxstarter -y
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
 Update-ExecutionPolicy Unrestricted
 
-%AndroidSDK
+#AndroidSDK
 choco install android-sdk
 
-%DotNetFramework
+#DotNetFramework
 choco install dotnet4.5
 
-%JDK7
+#JDK7
 choco install jdk7
-%J SE 8
+#J SE 8
 choco install jdk8
 
-%MSBuild
+#MSBuild
 choco install microsoft-build-tools
 
-%VisualStudio
+#VisualStudio
 choco install visualstudiocode
 
-%Xamarin.Android
+#Xamarin.Android
 choco install xamarin-visualstudio
+
+Install-WindowsUpdate -AcceptEula
