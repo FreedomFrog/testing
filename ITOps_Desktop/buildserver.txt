@@ -1,0 +1,24 @@
+iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+CINST Boxstarter -y
+Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
+Update-ExecutionPolicy Unrestricted
+
+%AndroidSDK
+choco install android-sdk
+
+%DotNetFramework
+choco install dotnet4.5
+
+%JDK7
+choco install jdk7
+%J SE 8
+choco install jdk8
+
+%MSBuild
+choco install microsoft-build-tools
+
+%VisualStudio
+choco install visualstudiocode
+
+%Xamarin.Android
+choco install xamarin-visualstudio
