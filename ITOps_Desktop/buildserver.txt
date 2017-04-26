@@ -8,6 +8,7 @@ choco install android-sdk
 
 #DotNetFramework
 choco install dotnet4.5
+choco install dotnet4.5.2
 
 #JDK7
 choco install jdk7
@@ -20,7 +21,18 @@ choco install microsoft-build-tools
 #VisualStudio
 choco install visualstudiocode
 
+#VSTest
+choco install visualstudio2015testagents
+choco install vcredist2015
+
 #Xamarin.Android
 choco install xamarin-visualstudio
 
+#Xamarin iOS
+choco install xamarin-ios-simulator
+
+#Web deployment tools
+choco install webdeploy
+
 Install-WindowsUpdate -AcceptEula
+
