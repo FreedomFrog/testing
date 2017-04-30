@@ -8,7 +8,7 @@ Set-TaskbarOptions -Size Large -Lock -Dock Bottom
 
 
 cinst notepadplusplus.install
-cinst git
+choco install git -params "/GitAndUnixToolsOnPath"
 cinst adobereader
 cinst GoogleChrome
 cinst 7zip.install
@@ -23,6 +23,7 @@ cinst pip -y
 cinst winscp
 cinst vagrant
 cinst rdcman
+
 
 
 Install-WindowsUpdate -AcceptEula
