@@ -28,6 +28,11 @@ cinst rdcman
 
 Install-WindowsUpdate -AcceptEula
 
+#SSH
+$new_path = "$env:PATH;C:/Program Files/Git/usr/bin"
+$env:PATH=$new_path
+[Environment]::SetEnvironmentVariable("path", $new_path, "Machine")
+
 #remove edge from taskbar
 #pin chrome to taskbar
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
