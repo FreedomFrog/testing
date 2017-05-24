@@ -42,7 +42,6 @@ Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\WindowsPowerShell\v1.0
 Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Microsoft Office\Office14\OUTLOOK.EXE"
 #remove unwanted apps from win10
 
-Install-ChocolateyFileAssociation ".txt" "$env:programfiles\Sublime Text 3\sublime_text.exe"
 
 #pin remote desktop manager to taskbar
 Install-ChocolateyPinnedTaskBarItem "$(Boxstarter.programFilesx86)\Microsoft\Remote Desktop Connection Manager\RDCMan.exe"
