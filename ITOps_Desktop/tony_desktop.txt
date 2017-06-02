@@ -16,7 +16,6 @@ cinst windirstat
 cinst visualstudiocode
 cinst Firefox
 cinst putty -y
-cinst virtualbox
 cinst teamviewer
 cinst python -y
 cinst pip -y
