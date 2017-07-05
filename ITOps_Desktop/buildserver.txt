@@ -20,7 +20,18 @@ choco install jdk7
 choco install jdk8
 
 #VisualStudioCode
-#choco install visualstudiocode
+choco install visualstudiocode
+
+#Nartac IIS Crypto
+choco install iiscrypto-cli
+
+
 
 Install-WindowsUpdate -AcceptEula
 
+powershell -Command "iiscryptocli /template "\\pdxvfs1\shared\itops\Deployment\Build Machines\buildserver.ictpl" /reboot"
+
+powershell -Command "Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\ -Name DisableIPSourceRouting -Value 2"
+if (Test-PendingReboot) { Invoke-Reboot }
+powershell -Command "Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\ -Name DisableIPSourceRouting -Value 2"
+if (Test-PendingReboot) { Invoke-Reboot }
