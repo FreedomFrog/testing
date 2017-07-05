@@ -3,13 +3,14 @@ CINST Boxstarter -y
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
 Update-ExecutionPolicy Unrestricted
 
-#VisualStudio 2015 Professional
-choco install visualstudio2015professional
+#VisualStudio 2017 community
+cinst visualstudio2017community
 
-#AndroidSDK
-choco install android-sdk
+#Android studio
+cinst androidstudio
 
 #DotNetFramework
+#cinst dotnet3.5
 #choco install dotnet4.5
 #choco install dotnet4.5.2
 
@@ -18,21 +19,8 @@ choco install jdk7
 #J SE 8
 choco install jdk8
 
-#MSBuild
-choco install microsoft-build-tools
-
 #VisualStudioCode
 #choco install visualstudiocode
-
-#VSTest
-#choco install visualstudio2015testagents
-#choco install vcredist2015
-
-#Xamarin.Android
-#choco install xamarin-visualstudio
-
-#Xamarin iOS
-#choco install xamarin-ios-simulator
 
 Install-WindowsUpdate -AcceptEula
 
