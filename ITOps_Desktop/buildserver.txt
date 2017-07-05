@@ -32,6 +32,6 @@ Install-WindowsUpdate -AcceptEula
 powershell -Command "iiscryptocli /template "\\pdxvfs1\shared\itops\Deployment\Build Machines\buildserver.ictpl" "
 
 powershell -Command "Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\ -Name DisableIPSourceRouting -Value 2"
-if (Test-PendingReboot) { Invoke-Reboot }
+
 powershell -Command "Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\ -Name DisableIPSourceRouting -Value 2"
-if (Test-PendingReboot) { Invoke-Reboot }
+
