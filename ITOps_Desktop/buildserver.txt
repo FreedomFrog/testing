@@ -12,6 +12,9 @@ choco install visualstudio2015community
 #Android studio
 cinst androidstudio
 
+#Xamarin visual studio
+choco install xamarin-visualstudio
+
 #DotNetFramework
 #cinst dotnet3.5
 #choco install dotnet4.5
