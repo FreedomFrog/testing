@@ -13,4 +13,18 @@ cinst adobereader
 cinst GoogleChrome
 cinst 7zip.install
 cinst windirstat
-cinst visualstudiocode
+cinst firefox
+choco install visualstudio2017professional
+choco install putty.install
+choco install fiddler4
+choco install nunit.install
+choco install office365business
+
+Install-WindowsUpdate -AcceptEula
+
+powershell -Command "iiscryptocli /template "\\pdxvfs1\shared\itops\Deployment\Build Machines\buildserver.ictpl" "
+
+powershell -Command "Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\ -Name DisableIPSourceRouting -Value 2"
+
+powershell -Command "Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\ -Name DisableIPSourceRouting -Value 2"
+
