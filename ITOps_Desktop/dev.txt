@@ -14,6 +14,7 @@ cinst GoogleChrome
 cinst 7zip.install
 cinst windirstat
 cinst firefox
+choco install jre8
 choco install visualstudio2017professional
 choco install putty.install
 choco install fiddler4
