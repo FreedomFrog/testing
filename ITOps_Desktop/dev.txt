@@ -21,6 +21,7 @@ choco install putty.install
 choco install fiddler4
 choco install nunit.install
 choco install office365business
+choco install sql-server-management-studio
 
 Install-WindowsUpdate -AcceptEula
 
