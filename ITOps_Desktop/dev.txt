@@ -22,8 +22,12 @@ choco install fiddler4
 choco install nunit.install
 choco install office365business
 choco install sql-server-management-studio
+choco install silverlight
+choco install silverlight5sdk
 
 Install-WindowsUpdate -AcceptEula
+
+powershell -Command "& '\\pdxvfs1\shared\itops\Microsoft\Visual studio\Visual Studio 2010 - Professional\en_visual_studio_2010_professional_web_installer_x86_516532.exe' "
 
 powershell -Command "iiscryptocli /template "\\pdxvfs1\shared\itops\Deployment\Build Machines\buildserver.ictpl" "
 
