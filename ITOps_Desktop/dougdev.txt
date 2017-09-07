@@ -14,6 +14,6 @@ choco install silverlight5sdk
 
 & msiexec.exe /i "\\pdxvfs1\shared\itops\Microsoft\Team Foundation\VS 2010 TFS Support\Visual Studio Team Foundation Server MSSCCI Provider.msi" ALLUSERS=1 /qn /norestart
 
-& "\\pdxvfs1\shared\itops\Microsoft\Team Foundation\VS 2010 TFS Support\VS10SP1-KB2662296.exe"
+& "\\pdxvfs1\shared\itops\Microsoft\Team Foundation\VS 2010 TFS Support\VS10SP1-KB2662296.exe" /q
 
 Install-WindowsUpdate -AcceptEula
