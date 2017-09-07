@@ -6,7 +6,7 @@ Update-ExecutionPolicy Unrestricted
 
 Set-TaskbarOptions -Size Large -Lock -Dock Bottom
 
-choco install silverlight
+choco install silverlight5developerruntime
 choco install silverlight5sdk
 & '\\pdxvfs1\shared\itops\Microsoft\Visual studio\Visual Studio 2010 - Professional\en_visual_studio_2010_professional_web_installer_x86_516532.exe' /q /full /norestart 
 
