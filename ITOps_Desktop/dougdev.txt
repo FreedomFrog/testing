@@ -6,11 +6,13 @@ Update-ExecutionPolicy Unrestricted
 
 Set-TaskbarOptions -Size Large -Lock -Dock Bottom
 
+
+& '\\pdxvfs1\shared\itops\Microsoft\Visual studio\Visual Studio 2010 - Professional\en_visual_studio_2010_professional_web_installer_x86_516532.exe' /q /norestart 
+
+& '\\pdxvfs1\shared\itops\Microsoft\Visual studio\Visual Studio 2010 - Professional\mu_visual_studio_2010_sp1_web_installer_x86_651694.exe' /q /norestart
+
 choco install silverlight5developerruntime
 choco install silverlight5sdk
-& '\\pdxvfs1\shared\itops\Microsoft\Visual studio\Visual Studio 2010 - Professional\en_visual_studio_2010_professional_web_installer_x86_516532.exe' /q /full /norestart 
-
-& '\\pdxvfs1\shared\itops\Microsoft\Visual studio\Visual Studio 2010 - Professional\mu_visual_studio_2010_sp1_web_installer_x86_651694.exe' /q /full /norestart
 
 & msiexec.exe /i "\\pdxvfs1\shared\itops\Microsoft\Team Foundation\VS 2010 TFS Support\Visual Studio Team Foundation Server MSSCCI Provider.msi" ALLUSERS=1 /qn /norestart
 
