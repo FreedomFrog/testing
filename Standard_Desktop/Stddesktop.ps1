@@ -18,7 +18,7 @@ Install-WindowsUpdate -AcceptEula
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFilesx86)\Google\Chrome\Application\chrome.exe"
 
 #pin outlook 2010 to taskbar
-Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Microsoft Office\Office14\OUTLOOK.EXE"
+
 
 #remove unwanted apps from win10
 
