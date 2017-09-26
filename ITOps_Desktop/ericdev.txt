@@ -1,0 +1,7 @@
+choco install itunes
+choco install beyondcompare
+choco install sqlitebrowser
+choco install filezilla
+choco install visualstudiocode
+choco install nunit
+choco install testdriven.net
