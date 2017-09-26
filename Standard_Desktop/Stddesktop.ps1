@@ -11,6 +11,7 @@ cinst adobereader
 cinst GoogleChrome
 cinst 7zip.install
 cinst Firefox
+choco install office365business
 
 Install-WindowsUpdate -AcceptEula
 
