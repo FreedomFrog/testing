@@ -15,3 +15,20 @@ choco install filezilla
 choco install visualstudiocode
 choco install nunit
 choco install testdriven.net
+choco install git -params "/GitAndUnixToolsOnPath"
+cinst adobereader
+cinst GoogleChrome
+cinst 7zip.install
+cinst windirstat
+cinst winscp
+cinst firefox
+choco install jre8
+choco install visualstudio2017professional
+choco install putty.install
+choco install fiddler4
+choco install office365business
+choco install sql-server-management-studio
+choco install silverlight
+choco install silverlight5sdk
+
+Install-WindowsUpdate -AcceptEula
