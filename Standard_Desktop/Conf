@@ -1,0 +1,35 @@
+iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+CINST Boxstarter -y
+Set-WindowsExplorerOptions -EnableShowFileExtensions
+Update-ExecutionPolicy Unrestricted
+
+
+Set-TaskbarOptions -Size Large -Lock -Dock Bottom
+
+
+cinst adobereader
+cinst GoogleChrome
+cinst 7zip.install
+cinst Firefox
+choco install office365business
+choco install microsoft-teams
+choco install skype
+choco install visualstudiocode
+choco install flashplayerppapi
+choco install teamviewer
+choco install beyondcompare
+choco install sql-server-management-studio
+choco install silverlight
+choco install notepadplusplus.install
+
+choco install gotomeeting
+
+Install-WindowsUpdate -AcceptEula
+
+#pin chrome to taskbar
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFilesx86)\Google\Chrome\Application\chrome.exe"
+
+#pin outlook 2010 to taskbar
+
+
+#remove unwanted apps from win10
