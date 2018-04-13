@@ -7,7 +7,7 @@ Update-ExecutionPolicy Unrestricted
 Set-TaskbarOptions -Size Large -Lock -Dock Bottom
 
 
-cinst notepadplusplus.install
+#cinst notepadplusplus.install
 choco install git -params "/GitAndUnixToolsOnPath"
 cinst adobereader
 cinst GoogleChrome
@@ -16,11 +16,11 @@ cinst windirstat
 cinst visualstudiocode
 cinst Firefox
 cinst putty -y
-cinst teamviewer
+#cinst teamviewer
 cinst python -y
 cinst pip -y
 cinst winscp
-cinst vagrant
+#cinst vagrant
 cinst rdcman
 
 
