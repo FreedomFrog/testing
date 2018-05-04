@@ -1,3 +1,3 @@
 # testing
 boxstarter
-[=25% "25%"]
+[=25%]
