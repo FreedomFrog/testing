@@ -1,4 +1,4 @@
 # testing
 boxstarter
 
-![progress](http://progressed.io/bar/110 "progress")
+![progress](http://progressed.io/bar/90 "progress")
